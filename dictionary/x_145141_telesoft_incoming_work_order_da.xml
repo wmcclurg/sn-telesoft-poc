@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="Incoming Work Order Data" max_length="40" name="x_145141_telesoft_incoming_work_order_da" type="collection">
+        <element attributes="import_attribute_name=u_carrier,edge_encryption_enabled=true" label="Carrier" max_length="40" name="u_carrier" type="string"/>
+        <element attributes="import_attribute_name=u_contact_employee_id,edge_encryption_enabled=true" label="Contact employee Id" max_length="40" name="u_contact_employee_id" type="string"/>
+        <element attributes="import_attribute_name=u_contact_phone_number,edge_encryption_enabled=true" label="Contact Phone" max_length="40" name="u_contact_phone_number" type="string"/>
+        <element attributes="import_attribute_name=u_customer_order_number,edge_encryption_enabled=true" label="Customer Order Number" max_length="40" name="u_customer_order_number" type="string"/>
+        <element attributes="import_attribute_name=u_end_user_email,edge_encryption_enabled=true" label="Email" max_length="40" name="u_end_user_email" type="string"/>
+        <element attributes="import_attribute_name=u_item_type,edge_encryption_enabled=true" label="Item Type" max_length="40" name="u_item_type" type="string"/>
+        <element attributes="import_attribute_name=u_job_description,edge_encryption_enabled=true" label="Job Description" max_length="40" name="u_job_description" type="string"/>
+        <element attributes="import_attribute_name=u_job_type,edge_encryption_enabled=true" label="Job Type" max_length="40" name="u_job_type" type="string"/>
+        <element attributes="import_attribute_name=u_package_code,edge_encryption_enabled=true" label="Package Code" max_length="40" name="u_package_code" type="string"/>
+        <element attributes="import_attribute_name=u_plan_code,edge_encryption_enabled=true" label="Plan Code" max_length="40" name="u_plan_code" type="string"/>
+        <element attributes="import_attribute_name=u_plan_description,edge_encryption_enabled=true" label="Plan Description" max_length="40" name="u_plan_description" type="string"/>
+        <element attributes="import_attribute_name=u_shipping_address_1,edge_encryption_enabled=true" label="Shipping Address 1" max_length="40" name="u_shipping_address_1" type="string"/>
+        <element attributes="import_attribute_name=u_shipping_address_2,edge_encryption_enabled=true" label="Shipping Address 2" max_length="40" name="u_shipping_address_2" type="string"/>
+        <element attributes="import_attribute_name=u_shipping_city,edge_encryption_enabled=true" label="Shipping City" max_length="40" name="u_shipping_city" type="string"/>
+        <element attributes="import_attribute_name=u_shipping_state,edge_encryption_enabled=true" label="Shipping State" max_length="40" name="u_shipping_state" type="string"/>
+        <element attributes="import_attribute_name=u_shipping_zip,edge_encryption_enabled=true" label="Shipping zip" max_length="40" name="u_shipping_zip" type="string"/>
+        <element attributes="import_attribute_name=u_vendor,edge_encryption_enabled=true" label="Vendor" max_length="40" name="u_vendor" type="string"/>
+        <element attributes="import_attribute_name=u_work_order_comments,edge_encryption_enabled=true" label="Work Order Comments" max_length="40" name="u_work_order_comments" type="string"/>
+        <element attributes="import_attribute_name=u_work_order_number,edge_encryption_enabled=true" label="Work Order" max_length="40" name="u_work_order_number" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Telesoft Integration">cc4cf756db00030073a9fbefbf961909</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter table="incident">correlation_displaySTARTSWITHTelesoft^EQ<item endquery="false" field="correlation_display" goto="false" newquery="false" operator="STARTSWITH" or="false" value="Telesoft"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <hint>Work Order Integration Settings</hint>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Work Order Integration</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>incident</name>
+        <order>1000</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles/>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-07-21 20:30:25</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>af9cff96db00030073a9fbefbf961914</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Work Order Integration</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Telesoft Integration POC" source="x_145141_telesoft">3ab83b16db00030073a9fbefbf9619d1</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Telesoft Integration POC">3ab83b16db00030073a9fbefbf9619d1</sys_scope>
+        <sys_update_name>sys_app_module_af9cff96db00030073a9fbefbf961914</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-07-21 20:30:25</sys_updated_on>
+        <timeline_page/>
+        <title>Work Order Integration</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

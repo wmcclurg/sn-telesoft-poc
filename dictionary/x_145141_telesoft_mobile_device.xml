@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="cmdb_ci" label="Mobile Device" max_length="40" name="x_145141_telesoft_mobile_device" type="collection">
+        <element label="Carrier" max_length="40" name="u_carrier" type="string"/>
+        <element display="true" label="Number" max_length="20" name="u_number" type="string"/>
+        <element label="Plan Features" max_length="4000" name="u_plan_features" type="string"/>
+        <element label="Rate plan name" max_length="255" name="u_rate_plan_name" type="string"/>
+        <element label="Software Number" max_length="255" name="u_software_number" type="string"/>
+        <element label="Type" max_length="40" name="u_type" type="string"/>
+    </element>
+</database>

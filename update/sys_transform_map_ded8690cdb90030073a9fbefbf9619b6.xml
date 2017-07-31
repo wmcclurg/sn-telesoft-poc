@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_transform_map">
+    <sys_transform_map action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copy_empty_fields>false</copy_empty_fields>
+        <enforce_mandatory_fields>No</enforce_mandatory_fields>
+        <name>Incoming Work Order Data</name>
+        <order>1000</order>
+        <run_business_rules>true</run_business_rules>
+        <run_script>false</run_script>
+        <script><![CDATA[(function transformRow(source, target, map, log, isUpdate) {
+
+	// Add your code here
+
+})(source, target, map, log, action==="update");]]></script>
+        <source_table>x_145141_telesoft_incoming_work_order_da</source_table>
+        <sys_class_name>sys_transform_map</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-07-26 20:08:23</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ded8690cdb90030073a9fbefbf9619b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Incoming Work Order Data</sys_name>
+        <sys_package display_value="Telesoft Integration POC" source="x_145141_telesoft">3ab83b16db00030073a9fbefbf9619d1</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Telesoft Integration POC">3ab83b16db00030073a9fbefbf9619d1</sys_scope>
+        <sys_update_name>sys_transform_map_ded8690cdb90030073a9fbefbf9619b6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-07-26 20:08:23</sys_updated_on>
+        <target_table>incident</target_table>
+    </sys_transform_map>
+</record_update>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="Telesoft User Data" max_length="40" name="x_145141_telesoft_telesoft_user_data" sizeclass="14652" type="collection">
+        <element attributes="import_attribute_name=Address1,edge_encryption_enabled=true" label="Address1" max_length="42" name="u_address1" type="string"/>
+        <element attributes="import_attribute_name=Address2,edge_encryption_enabled=true" label="Address2" max_length="40" name="u_address2" type="string"/>
+        <element attributes="import_attribute_name=Address3,edge_encryption_enabled=true" label="Address3" max_length="40" name="u_address3" type="string"/>
+        <element attributes="import_attribute_name=Address4,edge_encryption_enabled=true" label="Address4" max_length="40" name="u_address4" type="string"/>
+        <element attributes="import_attribute_name=City,edge_encryption_enabled=true" label="City" max_length="40" name="u_city" type="string"/>
+        <element attributes="import_attribute_name=Company,edge_encryption_enabled=true" label="Company" max_length="40" name="u_company" type="string"/>
+        <element attributes="import_attribute_name=CostCenter,edge_encryption_enabled=true" label="CostCenter" max_length="40" name="u_costcenter" type="string"/>
+        <element attributes="import_attribute_name=Country,edge_encryption_enabled=true" label="Country" max_length="40" name="u_country" type="string"/>
+        <element attributes="import_attribute_name=EmailID,edge_encryption_enabled=true" label="EmailID" max_length="40" name="u_emailid" type="string"/>
+        <element attributes="import_attribute_name=EmployeeBlackberry,edge_encryption_enabled=true" label="EmployeeBlackberry" max_length="40" name="u_employeeblackberry" type="string"/>
+        <element attributes="import_attribute_name=EmployeeCell,edge_encryption_enabled=true" label="EmployeeCell" max_length="40" name="u_employeecell" type="string"/>
+        <element attributes="import_attribute_name=EmployeeFirstName,edge_encryption_enabled=true" label="EmployeeFirstName" max_length="40" name="u_employeefirstname" type="string"/>
+        <element attributes="import_attribute_name=EmployeeID,edge_encryption_enabled=true" label="EmployeeID" max_length="40" name="u_employeeid" type="string"/>
+        <element attributes="import_attribute_name=EmployeeIDPrefix,edge_encryption_enabled=true" label="EmployeeIDPrefix" max_length="40" name="u_employeeidprefix" type="string"/>
+        <element attributes="import_attribute_name=EmployeeLastName,edge_encryption_enabled=true" label="EmployeeLastName" max_length="40" name="u_employeelastname" type="string"/>
+        <element attributes="import_attribute_name=EmployeeMiddleName,edge_encryption_enabled=true" label="EmployeeMiddleName" max_length="40" name="u_employeemiddlename" type="string"/>
+        <element attributes="import_attribute_name=EmployeeName,edge_encryption_enabled=true" label="EmployeeName" max_length="40" name="u_employeename" type="string"/>
+        <element attributes="import_attribute_name=EmployeeSupervisor,edge_encryption_enabled=true" label="EmployeeSupervisor" max_length="40" name="u_employeesupervisor" type="string"/>
+        <element attributes="import_attribute_name=EmployeeSupID,edge_encryption_enabled=true" label="EmployeeSupID" max_length="40" name="u_employeesupid" type="string"/>
+        <element attributes="import_attribute_name=GroupDesc,edge_encryption_enabled=true" label="GroupDesc" max_length="49" name="u_groupdesc" type="string"/>
+        <element attributes="import_attribute_name=GroupID,edge_encryption_enabled=true" label="GroupID" max_length="40" name="u_groupid" type="string"/>
+        <element attributes="import_attribute_name=JobCode,edge_encryption_enabled=true" label="JobCode" max_length="40" name="u_jobcode" type="string"/>
+        <element attributes="import_attribute_name=State,edge_encryption_enabled=true" label="State" max_length="40" name="u_state" type="string"/>
+        <element attributes="import_attribute_name=Zip,edge_encryption_enabled=true" label="Zip" max_length="40" name="u_zip" type="string"/>
+    </element>
+</database>

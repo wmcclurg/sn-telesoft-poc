@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_data_source">
+    <sys_data_source action="INSERT_OR_UPDATE">
+        <category/>
+        <connection_timeout>0</connection_timeout>
+        <connection_url>attachment://sys_data_source:ac057804db10030073a9fbefbf9619a2/success_07-25-2017--06-30-05_amerenhrinfo20170725.csv</connection_url>
+        <connection_url_parameters/>
+        <csv_delimiter/>
+        <database_name/>
+        <database_port/>
+        <expand_node_children>false</expand_node_children>
+        <file_path>success_07-25-2017--06-30-05_amerenhrinfo20170725.csv</file_path>
+        <file_retrieval_method>Attachment</file_retrieval_method>
+        <format>CSV</format>
+        <glide_keystore>false</glide_keystore>
+        <header_row>1</header_row>
+        <import_set_table_label/>
+        <import_set_table_name>x_145141_telesoft_telesoft_user_data</import_set_table_name>
+        <instance_name/>
+        <jdbc_password/>
+        <jdbc_server/>
+        <jdbc_user_name/>
+        <jpath_root_node/>
+        <last_run_database_field/>
+        <last_run_datetime/>
+        <ldap_target/>
+        <maximum_rows/>
+        <mid_server/>
+        <name>success_07-25-2017--06-30-05_amerenhrinf</name>
+        <oracle_port>1521</oracle_port>
+        <oracle_sid>orcl</oracle_sid>
+        <properties/>
+        <query>All Rows from Table</query>
+        <query_timeout>0</query_timeout>
+        <scp_authentication>Username and Password</scp_authentication>
+        <scp_password/>
+        <scp_port/>
+        <scp_server/>
+        <scp_user_name/>
+        <sheet_number>1</sheet_number>
+        <sql_statement/>
+        <ssh_keyfile_path/>
+        <sys_class_name>sys_data_source</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-07-26 16:21:08</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ac057804db10030073a9fbefbf9619a2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>success_07-25-2017--06-30-05_amerenhrinf</sys_name>
+        <sys_package display_value="Telesoft Integration POC" source="x_145141_telesoft">3ab83b16db00030073a9fbefbf9619d1</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Telesoft Integration POC">3ab83b16db00030073a9fbefbf9619d1</sys_scope>
+        <sys_update_name>sys_data_source_ac057804db10030073a9fbefbf9619a2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-07-26 16:21:42</sys_updated_on>
+        <table_name/>
+        <type>File</type>
+        <use_integrated_authentication>false</use_integrated_authentication>
+        <use_last_run_datetime>false</use_last_run_datetime>
+        <xpath_root_node/>
+        <zipped>false</zipped>
+    </sys_data_source>
+</record_update>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>sys_popup,telesoft_integrated_view</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-07-24 23:30:26</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>6114c467db80030073a9fbefbf96198b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Sys_popup,telesoft_integrated_view</sys_name>
+        <sys_package display_value="Telesoft Integration POC" source="x_145141_telesoft">3ab83b16db00030073a9fbefbf9619d1</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Telesoft Integration POC">3ab83b16db00030073a9fbefbf9619d1</sys_scope>
+        <sys_update_name>sys_ui_view_6114c467db80030073a9fbefbf96198b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-07-24 23:30:26</sys_updated_on>
+        <title>Sys_popup,telesoft_integrated_view</title>
+        <user/>
+    </sys_ui_view>
+</record_update>
