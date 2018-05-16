@@ -6,18 +6,16 @@
         <sys_class_name>sys_rest_message_fn_parameters</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-07-21 23:13:07</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>b233a422db40030073a9fbefbf96197b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>telesoftURL</sys_name>
         <sys_package display_value="Telesoft Integration POC" source="x_145141_telesoft">3ab83b16db00030073a9fbefbf9619d1</sys_package>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Telesoft Integration POC">3ab83b16db00030073a9fbefbf9619d1</sys_scope>
         <sys_update_name>sys_rest_message_fn_parameters_b233a422db40030073a9fbefbf96197b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-07-21 23:13:07</sys_updated_on>
+        <sys_updated_on>2018-05-16 17:06:05</sys_updated_on>
         <type>string</type>
-        <value>https://hosted.telesoft.com/vsu-test</value>
+        <value>https://hosted2.telesoft.com/telmaster</value>
     </sys_rest_message_fn_parameters>
 </record_update>

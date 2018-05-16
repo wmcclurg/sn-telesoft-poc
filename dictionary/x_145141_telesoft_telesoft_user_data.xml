@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element extends="sys_import_set_row" label="Telesoft User Data" max_length="40" name="x_145141_telesoft_telesoft_user_data" sizeclass="14652" type="collection">
+    <element extends="sys_import_set_row" label="Telesoft User Data" max_length="40" name="x_145141_telesoft_telesoft_user_data" sizeclass="14109" type="collection">
         <element attributes="import_attribute_name=Address1,edge_encryption_enabled=true" label="Address1" max_length="42" name="u_address1" type="string"/>
         <element attributes="import_attribute_name=Address2,edge_encryption_enabled=true" label="Address2" max_length="40" name="u_address2" type="string"/>
         <element attributes="import_attribute_name=Address3,edge_encryption_enabled=true" label="Address3" max_length="40" name="u_address3" type="string"/>

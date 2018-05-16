@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_grid_canvas_pane">
+    <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+        <grid_canvas display_value="PA Usage by Web API">3262539adb021300c16ef11fbf9619f0</grid_canvas>
+        <height>10</height>
+        <portal_widget display_value="Created 2016-01-21 16:17:26">e764fbd29f811200ef4afa7dc67fcf6a</portal_widget>
+        <posx>0</posx>
+        <posy>40</posy>
+        <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-15 23:36:15</sys_created_on>
+        <sys_id>c362539adb021300c16ef11fbf9619f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>3262539adb021300c16ef11fbf9619f0</sys_name>
+        <sys_package display_value="Telesoft Integration POC" source="x_145141_telesoft">3ab83b16db00030073a9fbefbf9619d1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Telesoft Integration POC">3ab83b16db00030073a9fbefbf9619d1</sys_scope>
+        <sys_update_name>sys_grid_canvas_pane_c362539adb021300c16ef11fbf9619f5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-15 23:36:15</sys_updated_on>
+        <width>12</width>
+    </sys_grid_canvas_pane>
+</record_update>

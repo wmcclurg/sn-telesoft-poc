@@ -5,24 +5,22 @@
         <license_condition/>
         <license_model>none</license_model>
         <license_roles/>
-        <name>x_145141_telesoft_incoming_work_order_da</name>
+        <name>x_145141_telesoft_mobile_device</name>
         <op_delete>true</op_delete>
         <op_insert>true</op_insert>
         <op_update>true</op_update>
         <owner_condition/>
         <sys_class_name>ua_table_licensing_config</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-07-26 20:07:36</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
-        <sys_id>46d8690cdb90030073a9fbefbf96196b</sys_id>
+        <sys_created_on>2017-07-26 18:52:38</sys_created_on>
+        <sys_id>e232875ddb101300c16ef11fbf961993</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_145141_telesoft_incoming_work_order_da</sys_name>
+        <sys_name>x_145141_telesoft_mobile_device</sys_name>
         <sys_package display_value="Telesoft Integration POC" source="x_145141_telesoft">3ab83b16db00030073a9fbefbf9619d1</sys_package>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Telesoft Integration POC">3ab83b16db00030073a9fbefbf9619d1</sys_scope>
-        <sys_update_name>ua_table_licensing_config_46d8690cdb90030073a9fbefbf96196b</sys_update_name>
+        <sys_update_name>ua_table_licensing_config_e232875ddb101300c16ef11fbf961993</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-07-26 20:07:36</sys_updated_on>
+        <sys_updated_on>2017-07-26 18:52:38</sys_updated_on>
     </ua_table_licensing_config>
 </record_update>

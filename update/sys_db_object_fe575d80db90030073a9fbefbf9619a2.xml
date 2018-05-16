@@ -17,19 +17,17 @@
         <number_ref/>
         <provider_class/>
         <read_access>true</read_access>
-        <super_class display_value="Configuration Item" name="cmdb_ci">4dddcf0a9d32320092c0251cbdfd7937</super_class>
-        <sys_class_code>#]</sys_class_code>
+        <super_class display_value="Configuration Item" name="cmdb_ci">3de3eef7b8130300651775b34d8f51ea</super_class>
+        <sys_class_code>$!</sys_class_code>
         <sys_class_name>sys_db_object</sys_class_name>
-        <sys_class_path>/!!/#]</sys_class_path>
+        <sys_class_path>/!!/$!</sys_class_path>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-07-26 18:52:34</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>fe575d80db90030073a9fbefbf9619a2</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Mobile Device</sys_name>
         <sys_package display_value="Telesoft Integration POC" source="x_145141_telesoft">3ab83b16db00030073a9fbefbf9619d1</sys_package>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Telesoft Integration POC">3ab83b16db00030073a9fbefbf9619d1</sys_scope>
         <sys_update_name>sys_db_object_fe575d80db90030073a9fbefbf9619a2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>

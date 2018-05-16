@@ -13,7 +13,7 @@
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
         <collection>incident</collection>
-        <condition>current.assignment_group.changes()==true</condition>
+        <condition>current.assignment_group.changes()==true || current.state.changes()==true</condition>
         <description/>
         <execute_function>false</execute_function>
         <filter_condition/>
@@ -29,18 +29,45 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-	gs.info("Assignment group is"+current.assignment_group.name);
-		gs.info("correlationID  is"+current.correlation_id);
-		gs.info("correlationDisplay  is"+current.correlation_display);
+	gs.info("Assignment group is "+current.assignment_group.name);
+		gs.info("State value  is "+current.state.getDisplayValue());
+		gs.info("State decruptedvalue  is "+current.state);
+		gs.info("correlationID  is "+current.correlation_id);
+		gs.info("correlationDisplay is"+current.correlation_display);
+		gs.info('work order notes '+current.work_notes.getJournalEntry(1));
+		
  var r = new sn_ws.RESTMessageV2('x_145141_telesoft.TelesoftWorkOrderPost', 'Post');
- r.setStringParameterNoEscape('telesoftURL', 'https://hosted.telesoft.com/vsu-test');
+ r.setStringParameterNoEscape('telesoftURL', 'https://hosted2.telesoft.com/telmaster');
  r.setStringParameterNoEscape('incidentID', current.number);
 
  r.setStringParameterNoEscape('correlationID',current.correlation_id);
 //override authentication profile 
 //authentication type ='basic'/ 'oauth2'
 //r.setAuthentication(authentication type, profile name);
+	gs.info('going to try '+ r.getEndpoint());
+	var telesoftIntegrationRequest = {};
+	telesoftIntegrationRequest['workordernumber']=current.correlation_id;
+	telesoftIntegrationRequest['voxIncidentNumber']=current.number;
 	
+	//what to send in this scenario?
+	//incidentID as a voxIncidentNumber
+	//correlationID as the work_order_number
+	//send order cost in a different rule...
+	//send effectiveDate (if populated)....separate rule
+	//send latest notes?
+	//state value as status 
+	//reason
+	/*
+	{
+	"status": "assigned",
+	"voxIncidentNumber":"1524084235847",
+	"workOrderComments": "In the progress",
+	"lineNumber":"4805551313",
+	"effectiveDate":"04/18/2018","generalLedgerCode":"CBLKNCP10P10","summaryAccountNumber":"","accountNumber":"AMN2416100"
+	}
+	*/
+	
+	r.setRequestBody('{"monkey":"monkey"}');
 	var response = r.execute();
 	var responseBody = response.getBody();
 	gs.info(responseBody);
@@ -62,20 +89,18 @@
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-07-21 23:27:21</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>54542c22db40030073a9fbefbf9619b5</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>36</sys_mod_count>
         <sys_name>TelesoftUpdateTelesoftOnIncidentChange</sys_name>
         <sys_overrides/>
         <sys_package display_value="Telesoft Integration POC" source="x_145141_telesoft">3ab83b16db00030073a9fbefbf9619d1</sys_package>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Telesoft Integration POC">3ab83b16db00030073a9fbefbf9619d1</sys_scope>
         <sys_update_name>sys_script_54542c22db40030073a9fbefbf9619b5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-07-22 22:25:59</sys_updated_on>
+        <sys_updated_on>2018-05-16 20:35:56</sys_updated_on>
         <template/>
         <when>async</when>
     </sys_script>

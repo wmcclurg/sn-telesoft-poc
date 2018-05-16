@@ -19,13 +19,11 @@
         <sys_class_name>sys_transform_entry</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-07-26 16:58:45</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
         <sys_id>e79d3848db10030073a9fbefbf961994</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>u_costcenter</sys_name>
         <sys_package display_value="Telesoft Integration POC" source="x_145141_telesoft">3ab83b16db00030073a9fbefbf9619d1</sys_package>
         <sys_policy/>
-        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Telesoft Integration POC">3ab83b16db00030073a9fbefbf9619d1</sys_scope>
         <sys_update_name>sys_transform_entry_e79d3848db10030073a9fbefbf961994</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
