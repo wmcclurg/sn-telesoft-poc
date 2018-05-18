@@ -4,7 +4,7 @@
         <element label="Account Number" max_length="50" name="x_145141_telesoft_account_number" type="string"/>
         <element label="Carrier" max_length="50" name="x_145141_telesoft_carrier" type="string"/>
         <element label="CostCenter" max_length="50" name="x_145141_telesoft_costcenter" type="string"/>
-        <element display="true" label="Customer Service Number" max_length="100" name="x_145141_telesoft_customer_service_number" type="string"/>
+        <element label="Customer Service Number" max_length="100" name="x_145141_telesoft_customer_service_number" type="string"/>
         <element label="Effective Date" max_length="40" name="x_145141_telesoft_effective_date" type="glide_date"/>
         <element label="GLACCT" max_length="50" name="x_145141_telesoft_glacct" type="string"/>
         <element label="Item Type" max_length="50" name="x_145141_telesoft_item_type" type="string"/>

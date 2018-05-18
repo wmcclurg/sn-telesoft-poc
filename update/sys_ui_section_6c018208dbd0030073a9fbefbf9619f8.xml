@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
-    <sys_ui_section caption="" section_id="6c018208dbd0030073a9fbefbf9619f8" sys_domain="global" table="incident" version="3" view="telesoft_integrated_view">
+    <sys_ui_section caption="Incident [incident]" section_id="6c018208dbd0030073a9fbefbf9619f8" sys_domain="global" table="incident" version="3" view="telesoft_integrated_view">
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>number</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-05-16 21:49:41</sys_created_on>
-            <sys_id>f393c4f6db8a1300c16ef11fbf961954</sys_id>
+            <sys_created_on>2018-05-18 21:54:17</sys_created_on>
+            <sys_id>aed79edbdb821300c16ef11fbf961917</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6c018208dbd0030073a9fbefbf9619f8</sys_ui_section>
+            <sys_ui_section caption="Incident [incident]" display_value="Incident [incident]" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6c018208dbd0030073a9fbefbf9619f8</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-05-16 21:49:41</sys_updated_on>
+            <sys_updated_on>2018-05-18 21:54:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -19,13 +19,13 @@
             <element>caller_id</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-05-16 21:49:41</sys_created_on>
-            <sys_id>7b93c4f6db8a1300c16ef11fbf961954</sys_id>
+            <sys_created_on>2018-05-18 21:54:17</sys_created_on>
+            <sys_id>22d79edbdb821300c16ef11fbf961918</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6c018208dbd0030073a9fbefbf9619f8</sys_ui_section>
+            <sys_ui_section caption="Incident [incident]" display_value="Incident [incident]" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6c018208dbd0030073a9fbefbf9619f8</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-05-16 21:49:41</sys_updated_on>
+            <sys_updated_on>2018-05-18 21:54:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -33,13 +33,13 @@
             <element>category</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-05-16 21:49:41</sys_created_on>
-            <sys_id>fb93c4f6db8a1300c16ef11fbf961954</sys_id>
+            <sys_created_on>2018-05-18 21:54:17</sys_created_on>
+            <sys_id>a2d79edbdb821300c16ef11fbf961918</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6c018208dbd0030073a9fbefbf9619f8</sys_ui_section>
+            <sys_ui_section caption="Incident [incident]" display_value="Incident [incident]" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6c018208dbd0030073a9fbefbf9619f8</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-05-16 21:49:41</sys_updated_on>
+            <sys_updated_on>2018-05-18 21:54:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -47,13 +47,13 @@
             <element>subcategory</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-05-16 21:49:41</sys_created_on>
-            <sys_id>7f93c4f6db8a1300c16ef11fbf961954</sys_id>
+            <sys_created_on>2018-05-18 21:54:17</sys_created_on>
+            <sys_id>26d79edbdb821300c16ef11fbf961918</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6c018208dbd0030073a9fbefbf9619f8</sys_ui_section>
+            <sys_ui_section caption="Incident [incident]" display_value="Incident [incident]" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6c018208dbd0030073a9fbefbf9619f8</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-05-16 21:49:41</sys_updated_on>
+            <sys_updated_on>2018-05-18 21:54:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -61,13 +61,13 @@
             <element>business_service</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-05-16 21:49:41</sys_created_on>
-            <sys_id>ff93c4f6db8a1300c16ef11fbf961954</sys_id>
+            <sys_created_on>2018-05-18 21:54:17</sys_created_on>
+            <sys_id>a6d79edbdb821300c16ef11fbf961918</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6c018208dbd0030073a9fbefbf9619f8</sys_ui_section>
+            <sys_ui_section caption="Incident [incident]" display_value="Incident [incident]" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6c018208dbd0030073a9fbefbf9619f8</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-05-16 21:49:41</sys_updated_on>
+            <sys_updated_on>2018-05-18 21:54:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -75,13 +75,13 @@
             <element>cmdb_ci</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-05-16 21:49:41</sys_created_on>
-            <sys_id>7393c4f6db8a1300c16ef11fbf961955</sys_id>
+            <sys_created_on>2018-05-18 21:54:17</sys_created_on>
+            <sys_id>2ad79edbdb821300c16ef11fbf961918</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6c018208dbd0030073a9fbefbf9619f8</sys_ui_section>
+            <sys_ui_section caption="Incident [incident]" display_value="Incident [incident]" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6c018208dbd0030073a9fbefbf9619f8</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-05-16 21:49:41</sys_updated_on>
+            <sys_updated_on>2018-05-18 21:54:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -89,13 +89,13 @@
             <element>description</element>
             <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-05-16 21:49:41</sys_created_on>
-            <sys_id>f393c4f6db8a1300c16ef11fbf961955</sys_id>
+            <sys_created_on>2018-05-18 21:54:17</sys_created_on>
+            <sys_id>aad79edbdb821300c16ef11fbf961918</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6c018208dbd0030073a9fbefbf9619f8</sys_ui_section>
+            <sys_ui_section caption="Incident [incident]" display_value="Incident [incident]" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6c018208dbd0030073a9fbefbf9619f8</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-05-16 21:49:41</sys_updated_on>
+            <sys_updated_on>2018-05-18 21:54:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -103,13 +103,13 @@
             <element>correlation_id</element>
             <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-05-16 21:49:41</sys_created_on>
-            <sys_id>7793c4f6db8a1300c16ef11fbf961955</sys_id>
+            <sys_created_on>2018-05-18 21:54:17</sys_created_on>
+            <sys_id>2ed79edbdb821300c16ef11fbf961918</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6c018208dbd0030073a9fbefbf9619f8</sys_ui_section>
+            <sys_ui_section caption="Incident [incident]" display_value="Incident [incident]" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6c018208dbd0030073a9fbefbf9619f8</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-05-16 21:49:41</sys_updated_on>
+            <sys_updated_on>2018-05-18 21:54:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -117,13 +117,13 @@
             <element>opened_by</element>
             <position>8</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-05-16 21:49:41</sys_created_on>
-            <sys_id>f793c4f6db8a1300c16ef11fbf961955</sys_id>
+            <sys_created_on>2018-05-18 21:54:17</sys_created_on>
+            <sys_id>aed79edbdb821300c16ef11fbf961918</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6c018208dbd0030073a9fbefbf9619f8</sys_ui_section>
+            <sys_ui_section caption="Incident [incident]" display_value="Incident [incident]" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6c018208dbd0030073a9fbefbf9619f8</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-05-16 21:49:41</sys_updated_on>
+            <sys_updated_on>2018-05-18 21:54:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -131,13 +131,13 @@
             <element>.split</element>
             <position>9</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-05-16 21:49:41</sys_created_on>
-            <sys_id>7b93c4f6db8a1300c16ef11fbf961955</sys_id>
+            <sys_created_on>2018-05-18 21:54:17</sys_created_on>
+            <sys_id>22d79edbdb821300c16ef11fbf961919</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6c018208dbd0030073a9fbefbf9619f8</sys_ui_section>
+            <sys_ui_section caption="Incident [incident]" display_value="Incident [incident]" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6c018208dbd0030073a9fbefbf9619f8</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-05-16 21:49:41</sys_updated_on>
+            <sys_updated_on>2018-05-18 21:54:17</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -145,13 +145,13 @@
             <element>contact_type</element>
             <position>10</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-05-16 21:49:41</sys_created_on>
-            <sys_id>fb93c4f6db8a1300c16ef11fbf961955</sys_id>
+            <sys_created_on>2018-05-18 21:54:17</sys_created_on>
+            <sys_id>a2d79edbdb821300c16ef11fbf961919</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6c018208dbd0030073a9fbefbf9619f8</sys_ui_section>
+            <sys_ui_section caption="Incident [incident]" display_value="Incident [incident]" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6c018208dbd0030073a9fbefbf9619f8</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-05-16 21:49:41</sys_updated_on>
+            <sys_updated_on>2018-05-18 21:54:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -159,13 +159,13 @@
             <element>state</element>
             <position>11</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-05-16 21:49:41</sys_created_on>
-            <sys_id>7f93c4f6db8a1300c16ef11fbf961955</sys_id>
+            <sys_created_on>2018-05-18 21:54:17</sys_created_on>
+            <sys_id>26d79edbdb821300c16ef11fbf961919</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6c018208dbd0030073a9fbefbf9619f8</sys_ui_section>
+            <sys_ui_section caption="Incident [incident]" display_value="Incident [incident]" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6c018208dbd0030073a9fbefbf9619f8</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-05-16 21:49:41</sys_updated_on>
+            <sys_updated_on>2018-05-18 21:54:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -173,13 +173,13 @@
             <element>hold_reason</element>
             <position>12</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-05-16 21:49:41</sys_created_on>
-            <sys_id>ff93c4f6db8a1300c16ef11fbf961955</sys_id>
+            <sys_created_on>2018-05-18 21:54:17</sys_created_on>
+            <sys_id>a6d79edbdb821300c16ef11fbf961919</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6c018208dbd0030073a9fbefbf9619f8</sys_ui_section>
+            <sys_ui_section caption="Incident [incident]" display_value="Incident [incident]" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6c018208dbd0030073a9fbefbf9619f8</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-05-16 21:49:41</sys_updated_on>
+            <sys_updated_on>2018-05-18 21:54:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -187,13 +187,13 @@
             <element>impact</element>
             <position>13</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-05-16 21:49:41</sys_created_on>
-            <sys_id>7393c4f6db8a1300c16ef11fbf961956</sys_id>
+            <sys_created_on>2018-05-18 21:54:17</sys_created_on>
+            <sys_id>2ad79edbdb821300c16ef11fbf961919</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6c018208dbd0030073a9fbefbf9619f8</sys_ui_section>
+            <sys_ui_section caption="Incident [incident]" display_value="Incident [incident]" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6c018208dbd0030073a9fbefbf9619f8</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-05-16 21:49:41</sys_updated_on>
+            <sys_updated_on>2018-05-18 21:54:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -201,13 +201,13 @@
             <element>urgency</element>
             <position>14</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-05-16 21:49:41</sys_created_on>
-            <sys_id>f393c4f6db8a1300c16ef11fbf961956</sys_id>
+            <sys_created_on>2018-05-18 21:54:17</sys_created_on>
+            <sys_id>aad79edbdb821300c16ef11fbf961919</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6c018208dbd0030073a9fbefbf9619f8</sys_ui_section>
+            <sys_ui_section caption="Incident [incident]" display_value="Incident [incident]" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6c018208dbd0030073a9fbefbf9619f8</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-05-16 21:49:41</sys_updated_on>
+            <sys_updated_on>2018-05-18 21:54:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -215,13 +215,13 @@
             <element>priority</element>
             <position>15</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-05-16 21:49:41</sys_created_on>
-            <sys_id>7793c4f6db8a1300c16ef11fbf961956</sys_id>
+            <sys_created_on>2018-05-18 21:54:17</sys_created_on>
+            <sys_id>2ed79edbdb821300c16ef11fbf961919</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6c018208dbd0030073a9fbefbf9619f8</sys_ui_section>
+            <sys_ui_section caption="Incident [incident]" display_value="Incident [incident]" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6c018208dbd0030073a9fbefbf9619f8</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-05-16 21:49:41</sys_updated_on>
+            <sys_updated_on>2018-05-18 21:54:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -229,13 +229,13 @@
             <element>assignment_group</element>
             <position>16</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-05-16 21:49:41</sys_created_on>
-            <sys_id>f793c4f6db8a1300c16ef11fbf961956</sys_id>
+            <sys_created_on>2018-05-18 21:54:17</sys_created_on>
+            <sys_id>aed79edbdb821300c16ef11fbf961919</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6c018208dbd0030073a9fbefbf9619f8</sys_ui_section>
+            <sys_ui_section caption="Incident [incident]" display_value="Incident [incident]" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6c018208dbd0030073a9fbefbf9619f8</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-05-16 21:49:41</sys_updated_on>
+            <sys_updated_on>2018-05-18 21:54:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -243,18 +243,18 @@
             <element>assigned_to</element>
             <position>17</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-05-16 21:49:41</sys_created_on>
-            <sys_id>7b93c4f6db8a1300c16ef11fbf961956</sys_id>
+            <sys_created_on>2018-05-18 21:54:17</sys_created_on>
+            <sys_id>22d79edbdb821300c16ef11fbf96191a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6c018208dbd0030073a9fbefbf9619f8</sys_ui_section>
+            <sys_ui_section caption="Incident [incident]" display_value="Incident [incident]" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6c018208dbd0030073a9fbefbf9619f8</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-05-16 21:49:41</sys_updated_on>
+            <sys_updated_on>2018-05-18 21:54:17</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
-            <caption/>
+            <caption>Incident [incident]</caption>
             <header>false</header>
             <name>incident</name>
             <roles/>
@@ -264,15 +264,15 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>6c018208dbd0030073a9fbefbf9619f8</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_name>incident</sys_name>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_name>Incident [incident]</sys_name>
             <sys_overrides/>
             <sys_package display_value="Telesoft Integration POC" source="x_145141_telesoft">3ab83b16db00030073a9fbefbf9619d1</sys_package>
             <sys_policy/>
             <sys_scope display_value="Telesoft Integration POC">3ab83b16db00030073a9fbefbf9619d1</sys_scope>
             <sys_update_name>sys_ui_section_6c018208dbd0030073a9fbefbf9619f8</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-07-26 21:53:11</sys_updated_on>
+            <sys_updated_on>2018-05-18 21:54:16</sys_updated_on>
             <sys_user/>
             <title>false</title>
             <view display_value="Telesoft Integrated View" name="telesoft_integrated_view">60018ec4dbd0030073a9fbefbf9619ea</view>

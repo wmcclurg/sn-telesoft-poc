@@ -11,7 +11,7 @@
             <sys_mod_count>0</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="incident" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">5b987762db8a1300c16ef11fbf96198d</sys_ui_form>
-            <sys_ui_section caption="NULL" display_value="" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6c018208dbd0030073a9fbefbf9619f8</sys_ui_section>
+            <sys_ui_section caption="Incident [incident]" display_value="Incident [incident]" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6c018208dbd0030073a9fbefbf9619f8</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2018-05-16 21:01:36</sys_updated_on>
         </sys_ui_form_section>

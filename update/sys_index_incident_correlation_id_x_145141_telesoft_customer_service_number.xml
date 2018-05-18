@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_index">
+    <sys_index action="INSERT_OR_UPDATE">
+        <col_name_string>correlation_id,x_145141_telesoft_customer_service_number</col_name_string>
+        <index_col_name>91a3aa77b8130300651775b34d8f5146,6aa6951bdb021300c16ef11fbf9619f4</index_col_name>
+        <logical_table_name>incident</logical_table_name>
+        <sys_class_name>sys_index</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2018-05-18 21:46:58</sys_created_on>
+        <sys_id>6b265e9bdb821300c16ef11fbf96194f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>incident</sys_name>
+        <sys_package display_value="Telesoft Integration POC" source="x_145141_telesoft">3ab83b16db00030073a9fbefbf9619d1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Telesoft Integration POC">3ab83b16db00030073a9fbefbf9619d1</sys_scope>
+        <sys_update_name>sys_index_incident_correlation_id_x_145141_telesoft_customer_service_number</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-05-18 21:46:58</sys_updated_on>
+        <table display_value="Incident" name="incident">38752afbb8530300651775b34d8f5111</table>
+        <unique_index>false</unique_index>
+    </sys_index>
+</record_update>
