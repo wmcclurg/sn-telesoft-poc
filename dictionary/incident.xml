@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element attributes="email_client=true,all_tables.query_hints=true,hasWorkflow=true,live_feed=true" audit="true" extends="task" label="Incident" max_length="40" name="incident" sizeclass="56" text_index="true" type="collection">
+    <element attributes="email_client=true,all_tables.query_hints=true,hasWorkflow=true,live_feed=true" audit="true" extends="task" label="Incident" max_length="40" name="incident" sizeclass="57" text_index="true" type="collection">
         <element label="Account Number" max_length="50" name="x_145141_telesoft_account_number" type="string"/>
         <element label="Carrier" max_length="50" name="x_145141_telesoft_carrier" type="string"/>
         <element label="CostCenter" max_length="50" name="x_145141_telesoft_costcenter" type="string"/>
+        <element display="true" label="Customer Service Number" max_length="100" name="x_145141_telesoft_customer_service_number" type="string"/>
         <element label="Effective Date" max_length="40" name="x_145141_telesoft_effective_date" type="glide_date"/>
         <element label="GLACCT" max_length="50" name="x_145141_telesoft_glacct" type="string"/>
         <element label="Item Type" max_length="50" name="x_145141_telesoft_item_type" type="string"/>
@@ -11,7 +12,7 @@
         <element label="Order Cost" max_length="20" name="x_145141_telesoft_order_cost" type="currency"/>
         <element label="Rate Plan Name" max_length="100" name="x_145141_telesoft_rate_plan_name" type="string"/>
         <element label="Serial Number" max_length="50" name="x_145141_telesoft_serial_number" type="string"/>
-        <element display="true" label="Reason" max_length="100" name="x_145141_telesoft_u_reason" type="string"/>
+        <element label="Reason" max_length="100" name="x_145141_telesoft_u_reason" type="string"/>
         <element label="Vendor Ticket" max_length="50" name="x_145141_telesoft_vendor_ticket_number" type="string"/>
     </element>
 </database>

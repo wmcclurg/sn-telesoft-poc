@@ -13,13 +13,13 @@
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
         <collection>incident</collection>
-        <condition>current.work_notes.changes()==true</condition>
+        <condition>current.x_145141_telesoft_order_cost.changes()==true</condition>
         <description/>
         <execute_function>false</execute_function>
         <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>TelesoftIncidentNotesChange</name>
+        <name>OrderCostUpdate</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -29,13 +29,26 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-	gd.info("sending a note update!");
-	gs.info('work order notes '+current.work_notes.getJournalEntry(1));
-	gs.info("correlationID  is "+current.correlation_id);
-	var r = new sn_ws.RESTMessageV2('x_145141_telesoft.TelesoftWorkOrderPost', 'Post');
-	r.setStringParameterNoEscape('telesoftURL', 'https://hosted2.telesoft.com/telmaster');
-	r.setStringParameterNoEscape('incidentID', current.number);
-	r.setStringParameterNoEscape('correlationID',current.correlation_id);
+	//outside of assignment, state or notes changes
+	//we want to know about changes to order cost,mobilenumber,glcode, costcenter, accountnumber, 
+	gs.info("OrderCost Update Rule engaged");
+		gs.info("State value  is "+current.state.getDisplayValue());
+		gs.info("correlationID  is "+current.correlation_id);
+		gs.info("correlationDisplay is"+current.correlation_display);
+		var assignedToEmail='';
+		if(current.assigned_to.email != null)
+			assignedToEmail=current.assigned_to.email;
+	
+		var theComments="Updated Incident";
+		if(!current.work_notes.nil()){
+			gs.info('work order notes '+current.work_notes.getJournalEntry(1));
+			theComments=current.work_notes.getJournalEntry(1);
+		}
+	
+ var r = new sn_ws.RESTMessageV2('x_145141_telesoft.TelesoftWorkOrderPost', 'Post');
+ r.setStringParameterNoEscape('telesoftURL', 'https://hosted2.telesoft.com/telmaster');
+ r.setStringParameterNoEscape('incidentID', current.number);
+ r.setStringParameterNoEscape('correlationID',current.correlation_id);
 //override authentication profile 
 //authentication type ='basic'/ 'oauth2'
 //r.setAuthentication(authentication type, profile name);
@@ -45,6 +58,8 @@
 	telesoftIntegrationRequest['voxIncidentNumber']=current.number.toString();
 	telesoftIntegrationRequest['status']=current.state.getDisplayValue().toLowerCase();
 	telesoftIntegrationRequest['workOrderComments']=theComments;
+	telesoftIntegrationRequest['orderCost']=current.x_145141_telesoft_order_cost.toString();
+
 	
 	r.setRequestBody(JSON.stringify(telesoftIntegrationRequest));
 	var response = r.execute();
@@ -53,37 +68,40 @@
 	//var parser = new JSONParser();
 	var httpStatus = response.getStatusCode();
 	var parsedResponse =new global.JSON().decode(responseBody);
-	
+	gs.info("https Status "+httpStatus);
+	gs.info("Parsed Response "+parsedResponse);
 	if(httpStatus > 400){
 			gs.addErrorMessage("MDSL Integration: An Error Occurred! "+parsedResponse.errorMessage);
 	}
 	if(current.correlation_id.nil()){
-		if(parsedResponse.customerOrderNumber != null &&parsedResponse.customerOrderNumber.length > 0 )
-			current.correlation_id=parsedResponse.customerOrderNumber;
-		current.correlation_display='TELESOFT:'+parsedResponse.customerOrderNumber;
-		//There has to be a better way, but for now....
-		current.setWorkflow(false);
-		current.update();
-		gs.info(parsedResponse.customerOrderNumber);
+	if(parsedResponse.customerOrderNumber != null &&parsedResponse.customerOrderNumber.length > 0 )
+	current.correlation_id=parsedResponse.customerOrderNumber;
+	current.correlation_display='TELESOFT:'+parsedResponse.customerOrderNumber;
+	//There has to be a better way, but for now....
+	current.setWorkflow(false);
+    current.update();
+	gs.info(parsedResponse.customerOrderNumber);
 	}
+	
+
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-05-16 20:36:02</sys_created_on>
+        <sys_created_on>2018-05-16 22:56:59</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>7a12bb6edb4a1300c16ef11fbf961987</sys_id>
-        <sys_mod_count>11</sys_mod_count>
-        <sys_name>TelesoftIncidentNotesChange</sys_name>
+        <sys_id>d3c2147edb8a1300c16ef11fbf961987</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>OrderCostUpdate</sys_name>
         <sys_overrides/>
         <sys_package display_value="Telesoft Integration POC" source="x_145141_telesoft">3ab83b16db00030073a9fbefbf9619d1</sys_package>
         <sys_policy/>
         <sys_scope display_value="Telesoft Integration POC">3ab83b16db00030073a9fbefbf9619d1</sys_scope>
-        <sys_update_name>sys_script_7a12bb6edb4a1300c16ef11fbf961987</sys_update_name>
+        <sys_update_name>sys_script_d3c2147edb8a1300c16ef11fbf961987</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-05-18 18:55:50</sys_updated_on>
+        <sys_updated_on>2018-05-18 18:54:55</sys_updated_on>
         <template/>
         <when>async</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=7a12bb6edb4a1300c16ef11fbf961987"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=d3c2147edb8a1300c16ef11fbf961987"/>
 </record_update>

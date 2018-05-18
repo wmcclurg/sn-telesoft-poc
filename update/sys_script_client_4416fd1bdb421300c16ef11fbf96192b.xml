@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Prior to submitting, check that Telesoft Required Fields are populated and that the Resolved codes have been populated.&#13;
+Cancel the operation if the answer is no to any of it.</description>
+        <field>x_145141_telesoft_account_number</field>
+        <global>true</global>
+        <messages/>
+        <name>Telesoft.Incident.PreSubmitCheckonClose</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+	var okToSubmit = true;
+	//Start by examining the ticket state...
+	var stateValue = g_form.getIntValue('state');
+	alert('inside a custom onSubmit mechanism');
+	console.log('stateValue is '+stateValue);
+	try{
+	switch(stateValue){
+		case 6: //resolved on the incident table
+		case 7: //Closed on the incident table
+			console.log('inside the closed or resolved check block');
+			var closeCode = g_form.getValue('close_code');
+			if(closeCode != null && closeCode.length >1){
+				//now check for the required telesoft fields
+				if(g_form.getValue('x_145141_telesoft_account_number').length == 0 ){
+					g_form.addErrorMessage('Missing Required MDSL Account Number');
+					okToSubmit=false;
+				}
+				
+				if(g_form.getValue('x_145141_telesoft_glacct').length == 0 ){
+					g_form.addErrorMessage('Missing Required MDSL GL Code');
+					okToSubmit=false;
+				}
+				
+				if(g_form.getValue('x_145141_telesoft_effective_date').length == 0 ){
+					g_form.addErrorMessage('Missing Required MDSL Effective Code');
+					okToSubmit=false;
+				}
+				if(g_form.getValue('x_145141_telesoft_mobilenumber').length == 0 ){
+					g_form.addErrorMessage('Missing Required MDSL Mobile Number');
+					okToSubmit=false;
+				}
+			}
+			else{
+				g_form.addErrorMessage('Missing Required Resolution Code');
+				okToSubmit=false;
+			}
+			break;
+		default:
+			console.log('ok people nothing to see here!');
+			break;
+	}
+	}
+	catch(err){
+		console.log('The survy sez:'+err);
+	}
+	return okToSubmit;
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-18 19:44:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4416fd1bdb421300c16ef11fbf96192b</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Telesoft.Incident.PreSubmitCheckonClose</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Telesoft Integration POC" source="x_145141_telesoft">3ab83b16db00030073a9fbefbf9619d1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Telesoft Integration POC">3ab83b16db00030073a9fbefbf9619d1</sys_scope>
+        <sys_update_name>sys_script_client_4416fd1bdb421300c16ef11fbf96192b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-18 20:08:03</sys_updated_on>
+        <table>incident</table>
+        <type>onSubmit</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="MDSL Work Order Information" section_id="6393c4f6db8a1300c16ef11fbf961937" sys_domain="global" table="incident" version="3" view="telesoft_integrated_view">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_145141_telesoft_glacct</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-18 20:09:24</sys_created_on>
+            <sys_id>96df7d9fdb421300c16ef11fbf961993</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="MDSL Work Order Information" display_value="MDSL Work Order Information" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6393c4f6db8a1300c16ef11fbf961937</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-18 20:09:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_145141_telesoft_costcenter</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-18 20:09:24</sys_created_on>
+            <sys_id>5edf7d9fdb421300c16ef11fbf961993</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="MDSL Work Order Information" display_value="MDSL Work Order Information" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6393c4f6db8a1300c16ef11fbf961937</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-18 20:09:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_145141_telesoft_account_number</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-18 20:09:24</sys_created_on>
+            <sys_id>dedf7d9fdb421300c16ef11fbf961993</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="MDSL Work Order Information" display_value="MDSL Work Order Information" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6393c4f6db8a1300c16ef11fbf961937</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-18 20:09:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_145141_telesoft_effective_date</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-18 20:09:24</sys_created_on>
+            <sys_id>52df7d9fdb421300c16ef11fbf961994</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="MDSL Work Order Information" display_value="MDSL Work Order Information" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6393c4f6db8a1300c16ef11fbf961937</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-18 20:09:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-18 20:09:24</sys_created_on>
+            <sys_id>d2df7d9fdb421300c16ef11fbf961994</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="MDSL Work Order Information" display_value="MDSL Work Order Information" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6393c4f6db8a1300c16ef11fbf961937</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-18 20:09:24</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_145141_telesoft_order_cost</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-18 20:09:24</sys_created_on>
+            <sys_id>56df7d9fdb421300c16ef11fbf961994</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="MDSL Work Order Information" display_value="MDSL Work Order Information" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6393c4f6db8a1300c16ef11fbf961937</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-18 20:09:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_145141_telesoft_serial_number</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-18 20:09:24</sys_created_on>
+            <sys_id>d6df7d9fdb421300c16ef11fbf961994</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="MDSL Work Order Information" display_value="MDSL Work Order Information" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6393c4f6db8a1300c16ef11fbf961937</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-18 20:09:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_145141_telesoft_mobilenumber</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-18 20:09:24</sys_created_on>
+            <sys_id>5adf7d9fdb421300c16ef11fbf961994</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="MDSL Work Order Information" display_value="MDSL Work Order Information" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6393c4f6db8a1300c16ef11fbf961937</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-18 20:09:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-18 20:09:24</sys_created_on>
+            <sys_id>dadf7d9fdb421300c16ef11fbf961994</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="MDSL Work Order Information" display_value="MDSL Work Order Information" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6393c4f6db8a1300c16ef11fbf961937</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-18 20:09:24</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-18 20:09:24</sys_created_on>
+            <sys_id>5edf7d9fdb421300c16ef11fbf961994</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="MDSL Work Order Information" display_value="MDSL Work Order Information" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6393c4f6db8a1300c16ef11fbf961937</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-18 20:09:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_145141_telesoft_u_reason</element>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-18 20:09:24</sys_created_on>
+            <sys_id>dedf7d9fdb421300c16ef11fbf961994</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="MDSL Work Order Information" display_value="MDSL Work Order Information" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6393c4f6db8a1300c16ef11fbf961937</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-18 20:09:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cxs_table_search.xml</element>
+            <position>11</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-18 20:09:24</sys_created_on>
+            <sys_id>52df7d9fdb421300c16ef11fbf961995</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Contextual Search Results">11eb1622eb1121003623666cd206fe56</sys_ui_formatter>
+            <sys_ui_section caption="MDSL Work Order Information" display_value="MDSL Work Order Information" name="incident" sys_domain="global" view="60018ec4dbd0030073a9fbefbf9619ea">6393c4f6db8a1300c16ef11fbf961937</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-18 20:09:24</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>MDSL Work Order Information</caption>
+            <header>false</header>
+            <name>incident</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-05-16 21:49:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6393c4f6db8a1300c16ef11fbf961937</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>MDSL Work Order Information</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Telesoft Integration POC" source="x_145141_telesoft">3ab83b16db00030073a9fbefbf9619d1</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Telesoft Integration POC">3ab83b16db00030073a9fbefbf9619d1</sys_scope>
+            <sys_update_name>sys_ui_section_6393c4f6db8a1300c16ef11fbf961937</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-05-16 21:49:41</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Telesoft Integrated View" name="telesoft_integrated_view">60018ec4dbd0030073a9fbefbf9619ea</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

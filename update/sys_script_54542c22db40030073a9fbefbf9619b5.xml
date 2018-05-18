@@ -13,7 +13,7 @@
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
         <collection>incident</collection>
-        <condition>current.assignment_group.changes()==true || current.state.changes()==true</condition>
+        <condition>current.assignment_group.changes()==true || current.state.changes()==true || current.assigned_to.changes()==true</condition>
         <description/>
         <execute_function>false</execute_function>
         <filter_condition/>
@@ -29,59 +29,76 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-	gs.info("Assignment group is "+current.assignment_group.name);
+		gs.info("Assignment group is "+current.assignment_group.name);
 		gs.info("State value  is "+current.state.getDisplayValue());
-		gs.info("State decruptedvalue  is "+current.state);
 		gs.info("correlationID  is "+current.correlation_id);
 		gs.info("correlationDisplay is"+current.correlation_display);
-		gs.info('work order notes '+current.work_notes.getJournalEntry(1));
-		
+		gs.info("AssignmentTO  is "+current.assigned_to.email);
+		var assignedToEmail='';
+		if(current.assigned_to.email != null)
+			assignedToEmail=current.assigned_to.email;
+	
+		var theComments="Updated Incident";
+		if(!current.work_notes.nil()){
+			gs.info('work order notes '+current.work_notes.getJournalEntry(1));
+			theComments=current.work_notes.getJournalEntry(1);
+		}
+	
  var r = new sn_ws.RESTMessageV2('x_145141_telesoft.TelesoftWorkOrderPost', 'Post');
  r.setStringParameterNoEscape('telesoftURL', 'https://hosted2.telesoft.com/telmaster');
  r.setStringParameterNoEscape('incidentID', current.number);
-
  r.setStringParameterNoEscape('correlationID',current.correlation_id);
 //override authentication profile 
 //authentication type ='basic'/ 'oauth2'
 //r.setAuthentication(authentication type, profile name);
-	gs.info('going to try '+ r.getEndpoint());
+
 	var telesoftIntegrationRequest = {};
-	telesoftIntegrationRequest['workordernumber']=current.correlation_id;
-	telesoftIntegrationRequest['voxIncidentNumber']=current.number;
-	
-	//what to send in this scenario?
-	//incidentID as a voxIncidentNumber
-	//correlationID as the work_order_number
-	//send order cost in a different rule...
-	//send effectiveDate (if populated)....separate rule
-	//send latest notes?
-	//state value as status 
-	//reason
-	/*
-	{
-	"status": "assigned",
-	"voxIncidentNumber":"1524084235847",
-	"workOrderComments": "In the progress",
-	"lineNumber":"4805551313",
-	"effectiveDate":"04/18/2018","generalLedgerCode":"CBLKNCP10P10","summaryAccountNumber":"","accountNumber":"AMN2416100"
+	telesoftIntegrationRequest['workordernumber']=current.correlation_id.toString();
+	telesoftIntegrationRequest['voxIncidentNumber']=current.number.toString();
+	telesoftIntegrationRequest['status']=current.state.getDisplayValue().toLowerCase();
+	telesoftIntegrationRequest['workOrderComments']=theComments;
+	telesoftIntegrationRequest['assignedToEmail']=assignedToEmail.toString();
+	//on a closed or resolved status...send any integration specificn non-null value
+	switch(current.state.getDisplayValue().toLowerCase()){
+		case 'closed':
+		case 'resolved':
+			if(current.x_145141_telesoft_account_number != null){
+				telesoftIntegrationRequest['accountNumber']=current.x_145141_telesoft_account_number.toString();
+			}
+			if(current.x_145141_telesoft_glacct != null){
+				telesoftIntegrationRequest['generalLedgerCode']=current.x_145141_telesoft_glacct.toString();
+			}
+			if(current.x_145141_telesoft_mobilenumber != null){
+				telesoftIntegrationRequest['lineNumber']=current.x_145141_telesoft_mobilenumber.toString();
+			}
+			if(current.x_145141_telesoft_effective_date!=null){
+				telesoftIntegrationRequest['effectiveDate']=current.x_145141_telesoft_effective_date.getDisplayValue();
+			}
+			break;
 	}
-	*/
-	
-	r.setRequestBody('{"monkey":"monkey"}');
+
+	r.setRequestBody(JSON.stringify(telesoftIntegrationRequest));
 	var response = r.execute();
 	var responseBody = response.getBody();
 	gs.info(responseBody);
 	//var parser = new JSONParser();
 	var httpStatus = response.getStatusCode();
 	var parsedResponse =new global.JSON().decode(responseBody);
+	gs.info("https Status "+httpStatus);
+	gs.info("Response "+responseBody);
+	if(httpStatus > 400){
+			gs.addErrorMessage("MDSL Integration: An Error Occurred! "+parsedResponse.errorMessage);
+	}
+	
 	if(current.correlation_id.nil()){
-	if(parsedResponse.customerOrderNumber != null &&parsedResponse.customerOrderNumber.length > 0 )
-	current.correlation_id=parsedResponse.customerOrderNumber;
-	current.correlation_display='TELESOFT:'+parsedResponse.customerOrderNumber;
-	//There has to be a better way, but for now....
-	current.setWorkflow(false);
-    current.update();
-	gs.info(parsedResponse.customerOrderNumber);
+		if(parsedResponse.customerOrderNumber != null &&parsedResponse.customerOrderNumber.length > 0 )
+		current.correlation_id=parsedResponse.customerOrderNumber;
+		current.correlation_display='TELESOFT:'+parsedResponse.customerOrderNumber;
+		//There has to be a better way, but for now....This prevents any scripts or business rules from firing 
+		//just because we are adding the correlation value.
+		current.setWorkflow(false);
+		current.update();
+		gs.info(parsedResponse.customerOrderNumber);
 	}
 
 	
@@ -92,7 +109,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>54542c22db40030073a9fbefbf9619b5</sys_id>
-        <sys_mod_count>36</sys_mod_count>
+        <sys_mod_count>50</sys_mod_count>
         <sys_name>TelesoftUpdateTelesoftOnIncidentChange</sys_name>
         <sys_overrides/>
         <sys_package display_value="Telesoft Integration POC" source="x_145141_telesoft">3ab83b16db00030073a9fbefbf9619d1</sys_package>
@@ -100,7 +117,7 @@
         <sys_scope display_value="Telesoft Integration POC">3ab83b16db00030073a9fbefbf9619d1</sys_scope>
         <sys_update_name>sys_script_54542c22db40030073a9fbefbf9619b5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-05-16 20:35:56</sys_updated_on>
+        <sys_updated_on>2018-05-18 18:55:10</sys_updated_on>
         <template/>
         <when>async</when>
     </sys_script>
