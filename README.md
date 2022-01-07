@@ -1,3 +1,5 @@
+This is an example of extending the incident table (mimics a provionsing partner that we worked with)
+
 # Generated files
 This repository contains generated files and a checksum.
 
